@@ -1,0 +1,6 @@
+sentences_*
+.egg
+.whl
+.env
+.venv
+venv
