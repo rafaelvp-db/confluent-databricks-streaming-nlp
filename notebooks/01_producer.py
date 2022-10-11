@@ -85,7 +85,8 @@ def delivery_report(err, msg):
     else:
         print('Message delivered to {} [{}]'.format(msg.topic(), msg.partition()))
 
-for headline in final_dataset['sentence']:
+
+for count, headline in enumerate(final_dataset['sentence']):
     # Trigger any available delivery report callbacks from previous produce() calls
     p.poll(0)
     # Delay between each message
@@ -94,7 +95,12 @@ for headline in final_dataset['sentence']:
     # Asynchronously produce a message. The delivery report callback will
     # be triggered from the call to poll() above, or flush() below, when the
     # message has been successfully delivered or failed permanently.
-    p.produce('financial_headline', headline.encode('utf-8'), callback=delivery_report)
+    p.produce(
+      topic = 'financial_headline',
+      key = f"partition_{count % 6}",
+      value = headline.encode('utf-8'),
+      callback=delivery_report
+    )
 
 # Wait for any outstanding messages to be delivered and delivery report
 # callbacks to be triggered.
