@@ -97,7 +97,7 @@ for count, headline in enumerate(final_dataset['sentence']):
     # message has been successfully delivered or failed permanently.
     p.produce(
       topic = 'financial_headline',
-      key = f"partition_{count % 6}",
+      key = f"text",
       value = headline.encode('utf-8'),
       callback=delivery_report
     )
