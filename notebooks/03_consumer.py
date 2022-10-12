@@ -42,7 +42,7 @@ query = (
 
 # MAGIC %sql
 # MAGIC 
-# MAGIC select * from raw
+# MAGIC select CAST(key as STRING) as key, CAST(value as STRING) as value from raw
 
 # COMMAND ----------
 
