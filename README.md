@@ -14,7 +14,7 @@
   * Dates
   * Monetary values
 
-<img src="" />
+<img src="https://raw.githubusercontent.com/rafaelvp-db/confluent-databricks-streaming-nlp/main/img/ner.png" />
 
 ## High Level Solution Components
 * **Confluebt Kafka** for Real Time Ingestion
