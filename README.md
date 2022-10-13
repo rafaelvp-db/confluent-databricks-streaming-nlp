@@ -10,3 +10,7 @@
 * **Spark Structured Streaming** for data cleaning and preprocessing
 * **Distributed NER Model** with **Spark NLP** (for optimal throughput)
 * **Realtime Visualizations** with Databricks Notebooks
+
+<hr></hr>
+
+<img src="https://raw.githubusercontent.com/rafaelvp-db/confluent-databricks-streaming-nlp/main/img/arch.png" />
