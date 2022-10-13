@@ -32,6 +32,6 @@
 ## Additional Reference
 
 * Spark Structured Streaming
-* Spark NLP
-* Confluent Kafka
-* Named Entity Recognition
+* [Spark NLP](https://www.johnsnowlabs.com/)
+* [Confluent Kafka](https://www.confluent.io/)
+* [Named Entity Recognition](https://en.wikipedia.org/wiki/Named-entity_recognition)
